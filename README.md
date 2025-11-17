@@ -1,7 +1,7 @@
 # QtStuSys - 基于 Qt + MySQL 的学生管理系统
 
-![QtStuSys 系统截图](https://github.com/6hz-t/QtStuSys/blob/main/screenshots/main_window.png?raw=true)  
-*系统主界面（示例截图，实际需替换为项目真实截图路径）*
+![QtStuSys 系统截图](./src/image1.png)  
+
 
 ## 项目简介
 QtStuSys 是一款基于 **Qt 6.10.0** 框架开发的桌面端学生管理系统，集成 MySQL 数据库存储数据，支持学生信息、课程、成绩的全流程管理，提供 Excel（XLSX）批量导入/导出功能，界面简洁易用、支持 QSS 样式自定义，适用于学校、培训机构的日常学生管理场景。
@@ -20,6 +20,12 @@ QtStuSys 是一款基于 **Qt 6.10.0** 框架开发的桌面端学生管理系�
 - **数据库**：MySQL 8.0+（支持配置其他兼容数据库）
 - **文件处理**：支持 XLSX 格式导入/导出（依赖 Qt 自带模块或第三方库）
 - **UI 美化**：支持 QSS 样式表自定义界面主题
+## [数据库设计--databasedesigin.md](databasedesigin.md)
+1. **学生表**：存储学生信息，包含学号、姓名、性别、班级等字段。
+2. **课程表**：存储课程信息，包含课程ID、课程名称、课程类别、学分、教师等字段。
+3. **成绩表**：存储学生成绩信息，包含学生ID、课程ID、成绩等字段。
+4. **日志表**：记录系统操作日志，包含操作时间、操作类型、操作内容等字段。
+   详情请查看 `databasedesigin.md` 文件。
 
 ## 环境准备
 ### 1. 开发环境
@@ -55,6 +61,9 @@ QtStuSys 是一款基于 **Qt 6.10.0** 框架开发的桌面端学生管理系�
      ```
 4. 点击「构建」按钮，编译完成后，在 `build-QtStuSys-Desktop_Qt_6_10_0_MinGW_64_bit-Release` 目录下找到可执行文件 `QtStuSys.exe`，双击启动。
 
+
+
+
 ## 使用说明
 ### 1. 数据导入/导出（XLSX）
 #### 导出示例
@@ -67,16 +76,14 @@ QtStuSys 是一款基于 **Qt 6.10.0** 框架开发的桌面端学生管理系�
 
 ### 2. 关键操作截图
 #### （1）学生管理页面
-![学生管理页面](https://github.com/6hz-t/QtStuSys/blob/main/screenshots/student_manage.png?raw=true)  
+![学生管理页面](./src/image1.png)  
 *支持分页、搜索、批量操作及 XLSX 导入导出*
 
 #### （2）成绩录入页面
-![成绩录入页面](https://github.com/6hz-t/QtStuSys/blob/main/screenshots/score_input.png?raw=true)  
+![成绩录入页面](./src/image2.png)  
 *按课程批量录入成绩，支持导入/导出*
 
-#### （3）数据库配置页面
-![数据库配置页面](https://github.com/6hz-t/QtStuSys/blob/main/screenshots/db_config.png?raw=true)  
-*配置 MySQL 连接信息，支持测试连接*
+
 
 ### 3. 模板文件
 项目提供 XLSX 导入模板，位于 `template/` 目录：
