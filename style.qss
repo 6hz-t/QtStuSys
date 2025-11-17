@@ -27,6 +27,9 @@ QMenuBar::item:pressed {
     background-color: #bbdefb;
 }
 
+
+
+
 /* 菜单 */
 QMenu {
     background-color: #ffffff;

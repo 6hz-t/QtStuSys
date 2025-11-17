@@ -74,6 +74,14 @@ void ScoreManage::initConnections()
 
 void ScoreManage::refreshScoreTable()
 {
+    int rowCount = table->rowCount();
+    for (int i = rowCount - 1; i >= 0; --i) {
+        for (int j = 0; j < table->columnCount(); ++j) {
+            QTableWidgetItem* item = table->takeItem(i, j);
+            delete item;  // 显式删除item防止内存泄漏
+        }
+        table->removeRow(i);
+    }
     table->setRowCount(0);
     DatabaseManager* dbMgr = DatabaseManager::getInstance();
     if (!dbMgr->isConnected()) {
