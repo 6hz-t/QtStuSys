@@ -1,0 +1,17 @@
+release/databasemanager.o
+release/main.o
+release/mainwindow.o
+release/sidemenuwidget.o
+release/studentmanage.o
+release/systemmanage.o
+release/scoremanage.o
+release/coursemanage.o
+release/student.o
+release/qrc_src.o
+release/moc_databasemanager.o
+release/moc_mainwindow.o
+release/moc_sidemenuwidget.o
+release/moc_studentmanage.o
+release/moc_systemmanage.o
+release/moc_scoremanage.o
+release/moc_coursemanage.o

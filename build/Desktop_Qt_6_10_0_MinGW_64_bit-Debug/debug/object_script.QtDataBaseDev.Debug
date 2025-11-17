@@ -1,0 +1,17 @@
+debug/databasemanager.o
+debug/main.o
+debug/mainwindow.o
+debug/sidemenuwidget.o
+debug/studentmanage.o
+debug/systemmanage.o
+debug/scoremanage.o
+debug/coursemanage.o
+debug/student.o
+debug/qrc_src.o
+debug/moc_databasemanager.o
+debug/moc_mainwindow.o
+debug/moc_sidemenuwidget.o
+debug/moc_studentmanage.o
+debug/moc_systemmanage.o
+debug/moc_scoremanage.o
+debug/moc_coursemanage.o
