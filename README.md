@@ -1,2 +1,2 @@
-# QtDataBaseDev
+# QtStudentManageSystem
 
