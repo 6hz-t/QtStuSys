@@ -278,6 +278,7 @@ Makefile: ../../QtDataBaseDev.pro D:/Qt/qt/6.10.0/mingw_64/mkspecs/win32-g++/qma
 		D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/qt_config.prf \
 		D:/Qt/qt/6.10.0/mingw_64/mkspecs/win32-g++/qmake.conf \
 		D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/exclusive_builds.prf \
 		D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/toolchain.prf \
 		D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/default_pre.prf \
@@ -308,7 +309,6 @@ Makefile: ../../QtDataBaseDev.pro D:/Qt/qt/6.10.0/mingw_64/mkspecs/win32-g++/qma
 		D:/Qt/qt/6.10.0/mingw_64/lib/Qt6Sql.prl \
 		D:/Qt/qt/6.10.0/mingw_64/lib/Qt6Core.prl \
 		D:/Qt/qt/6.10.0/mingw_64/lib/Qt6EntryPoint.prl \
-		.qmake.stash \
 		D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/build_pass.prf \
 		../../src.qrc
 	$(QMAKE) -o Makefile ..\..\QtDataBaseDev.pro -spec win32-g++ "CONFIG+=qtquickcompiler"
@@ -520,6 +520,7 @@ D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/qt_functions.prf:
 D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/qt_config.prf:
 D:/Qt/qt/6.10.0/mingw_64/mkspecs/win32-g++/qmake.conf:
 D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/exclusive_builds.prf:
 D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/toolchain.prf:
 D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/default_pre.prf:
@@ -550,7 +551,6 @@ D:/Qt/qt/6.10.0/mingw_64/lib/Qt6Gui.prl:
 D:/Qt/qt/6.10.0/mingw_64/lib/Qt6Sql.prl:
 D:/Qt/qt/6.10.0/mingw_64/lib/Qt6Core.prl:
 D:/Qt/qt/6.10.0/mingw_64/lib/Qt6EntryPoint.prl:
-.qmake.stash:
 D:/Qt/qt/6.10.0/mingw_64/mkspecs/features/build_pass.prf:
 ../../src.qrc:
 qmake: FORCE
